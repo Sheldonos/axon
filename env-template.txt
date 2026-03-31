@@ -1,0 +1,15 @@
+# Axon — Environment Variables
+# Rename this file to .env before running the application locally.
+#
+# Generate a secure JWT_SECRET with: openssl rand -hex 32
+
+APP_ID=axon
+NODE_ENV=development
+PORT=3000
+
+# MySQL / TiDB / PlanetScale connection string
+# Format: mysql://USER:PASSWORD@HOST:PORT/DATABASE
+DATABASE_URL=mysql://root:password@localhost:3306/axon
+
+# JWT secret for signing session cookies (min 32 chars recommended)
+JWT_SECRET=change-me-to-a-long-random-secret-at-least-32-chars
